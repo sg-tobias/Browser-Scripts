@@ -25,7 +25,7 @@
             position: fixed;
             top: -10px;
             font-size: 1em;
-            color: red;
+            color: white;
             pointer-events: none;
             animation: fall linear infinite;
             z-index: 99999;
