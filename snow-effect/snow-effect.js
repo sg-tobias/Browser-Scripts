@@ -5,8 +5,8 @@
 // @description  Lässt es im Browser schneien, mit anpassbarer Größe und Geschwindigkeit
 // @author       Tobias Kolodziej
 // @match        https://sitegeist.de/
-// @downloadURL  https://github.com/sg-tobias/Browser-Scripts/new/main.../main/snow-effect/snow-effect.js
-// @updateURL    https://github.com/sg-tobias/Browser-Scripts/new/main.../main/snow-effect/snow-effect.js
+// @downloadURL  https://raw.githubusercontent.com/sg-tobias/Browser-Scripts/refs/heads/main/snow-effect/snow-effect.js
+// @updateURL    https://raw.githubusercontent.com/sg-tobias/Browser-Scripts/refs/heads/main/snow-effect/snow-effect.js
 // @grant        none
 // ==/UserScript==
 
