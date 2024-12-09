@@ -7,7 +7,7 @@
 // @match        https://sitegeist.de/
 // @downloadURL  https://raw.githubusercontent.com/sg-tobias/Browser-Scripts/refs/heads/main/snow-effect/snow-effect.js
 // @updateURL    https://raw.githubusercontent.com/sg-tobias/Browser-Scripts/refs/heads/main/snow-effect/snow-effect.js
-// @resource     IMPORTED_CSS https://git.sitegeist.de/Tobias.Kolodziej/browser-scripte/-/raw/main/snow-effect/snow-effect.css
+// @resource     IMPORTED_CSS https://raw.githubusercontent.com/sg-tobias/Browser-Scripts/refs/heads/main/snow-effect/snow-effect.css
 // @grant        GM_getResourceText
 // @grant        GM_addStyle
 // ==/UserScript==
