@@ -7,7 +7,9 @@
 // @match        https://sitegeist.de/
 // @downloadURL  https://raw.githubusercontent.com/sg-tobias/Browser-Scripts/refs/heads/main/snow-effect/snow-effect.js
 // @updateURL    https://raw.githubusercontent.com/sg-tobias/Browser-Scripts/refs/heads/main/snow-effect/snow-effect.js
-// @grant        none
+// @resource     IMPORTED_CSS https://git.sitegeist.de/Tobias.Kolodziej/browser-scripte/-/raw/main/snow-effect/snow-effect.css
+// @grant        GM_getResourceText
+// @grant        GM_addStyle
 // ==/UserScript==
 
 (function() {
@@ -18,25 +20,9 @@
     const SIZE_RANGE = [10, 40]; // Größe in px [Min, Max]
     const snowflakes = new Set(); // Set zur Verwaltung aktiver Schneeflocken
 
-    // CSS für Schneeflocken
-    const style = document.createElement('style');
-    style.innerHTML = `
-        .snowflake {
-            position: fixed;
-            top: -10px;
-            font-size: 1em;
-            color: red;
-            pointer-events: none;
-            animation: fall linear infinite;
-            z-index: 99999;
-        }
-
-        @keyframes fall {
-            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(100vh) rotate(360deg); opacity: 1; }
-        }
-    `;
-    document.head.appendChild(style);
+     // Load CSS from GIT
+    const my_css = GM_getResourceText("IMPORTED_CSS");
+    GM_addStyle(my_css);
 
     // Zufallswert im Bereich [min, max] generieren
     function randomInRange([min, max]) {
