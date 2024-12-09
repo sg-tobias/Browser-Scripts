@@ -5,6 +5,7 @@
     pointer-events: none;
     animation: fall linear infinite;
     z-index: 99999;
+    filter: saturate(0) brightness(1.1);
 }
 
 @keyframes fall {
