@@ -1,7 +1,6 @@
 .snowflake {
     position: fixed;
     top: -10px;
-    font-size: 1em;
     color: white;
     pointer-events: none;
     animation: fall linear infinite;
